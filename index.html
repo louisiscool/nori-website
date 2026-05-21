@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nori API | Legal Agreements</title>
+    <style>
+        :root {
+            --bg-main: #0d1117;
+            --bg-card: #161b22;
+            --border-color: #30363d;
+            --text-main: #c9d1d9;
+            --text-muted: #8b949e;
+            --accent: #58a6ff;
+            --accent-hover: #1f6feb;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .header {
+            border-bottom: 1px solid var(--border-color);
+            background-color: var(--bg-card);
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .brand span {
+            color: var(--accent);
+        }
+
+        .nav-tabs {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .tab-btn {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .tab-btn:hover {
+            color: #ffffff;
+        }
+
+        .tab-btn.active {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .legal-box {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 2.5rem;
+            display: none;
+        }
+
+        .legal-box.active {
+            display: block;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 1.8rem;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
+
+        .last-updated {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: #ffffff;
+            font-size: 1.25rem;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p, li {
+            color: var(--text-main);
+            font-size: 0.95rem;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="brand">🟢 Nori<span>.API</span></div>
+        <nav class="nav-tabs">
+            <button class="tab-btn active" onclick="switchTab('tos')">Terms of Service</button>
+            <button class="tab-btn" onclick="switchTab('privacy')">Privacy Policy</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- TERMS OF SERVICE -->
+        <div id="tos" class="legal-box active">
+            <h1>Terms of Service</h1>
+            <div class="last-updated">Last Updated: May 2026</div>
+            
+            <p>Welcome to Nori API platform ("Service"). By accessing or utilizing our platform web interfaces, systems, or API keys, you agree to comply fully with these terms.</p>
+            
+            <h2>1. Account Usage and API Keys</h2>
+            <p>Users are granted a limited license to generate secure credentials for the execution of backend platform routines. You agree that:</p>
+            <ul>
+                <li>You are entirely responsible for preventing leakage or unauthorized distribution of your designated API tokens.</li>
+                <li>Nori reserves the right to terminate access tokens instantly if spamming or excessive rate limit abuse is detected.</li>
+            </ul>
+
+            <h2>2. Email System Acceptable Use</h2>
+            <p>Our routing domain services (including delivery acknowledgments) are built strictly to verify transactional application state events. You may not utilize our infrastructure or email aliases to transmit malicious bulk commercial messages, scams, or unverified script queries.</p>
+
+            <h2>3. Service Disclaimers</h2>
+            <p>Nori provides tools on an "as-is" structural basis. We are not liable for system dropouts, local script loop freezes, or background forwarding latency caused by third-party delivery infrastructure chains.</p>
+        </div>
+
+        <!-- PRIVACY POLICY -->
+        <div id="privacy" class="legal-box">
+            <h1>Privacy Policy</h1>
+            <div class="last-updated">Last Updated: May 2026</div>
+            
+            <p>This policy details how Nori manages and processes transmission metadata when you interact with our platform infrastructure networks.</p>
+            
+            <h2>1. Information We Collect</h2>
+            <p>To run our services securely, our platform interfaces cache minimal logistical tokens:</p>
+            <ul>
+                <li><strong>Developer Emails:</strong> Used to maintain verification data and issue system-critical operational status notices.</li>
+                <li><strong>Network Logs:</strong> Inbound routing actions parse simple envelope strings (like target addresses or timestamp vectors) to manage automated loops cleanly.</li>
+            </ul>
+
+            <h2>2. Processing Architecture</h2>
+            <p>We do not store the structural bodies of your general communications. Once data values are checked against your operational filters (like matching system domain routes), variables are cleared out from volatile memory runtimes.</p>
+
+            <h2>3. Security Measures</h2>
+            <p>All API endpoint queries and administrative operations use structured security tokens to protect backend databases from malicious access attempts.</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        &copy; 2026 Nori Platform. All rights reserved. Managed under run.place domain structures.
+    </footer>
+
+    <script>
+        function switchTab(tabId) {
+            // Remove active classes from buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            // Remove active classes from content containers
+            document.querySelectorAll('.legal-box').forEach(box => box.classList.remove('active'));
+            
+            // Activate selection components
+            event.currentTarget.classList.add('active');
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
